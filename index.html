@@ -24,8 +24,134 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+			  <section>
+                            <h1>Technical Debt</h1>
+                            <h2>From shitty product to minimum viable product</h2>
+                          </section>
+			  <section>
+                            <p>
+                              As a walker,
+                            </p><p>
+                              I want a bridge
+                            </p><p>
+                              In order to go to the other side of the river's bed
+                            </p>
+                            <aside class="notes">
+                              <p>I have an awesome project ! Just one story look !</p>
+                              <p>Now I need a team ! Let's ask a consultancy company !</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/consultants.jpg" width="800" height="500"/>
+                            <aside class="notes">
+                              <p>Ok now let's do it ! Show me what you got !</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/result.jpg"  width="500" height="500"/>
+                            <aside class="notes">
+                              <p>That's the bridge they showed me.</p>
+                              <p>And they actually were pretty proud</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/first-reaction.jpg"  width="750" height="500"/>
+                            <aside class="notes">
+                              <p>I think you guessed my reaction</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/dafuq.jpg"  width="750" height="500"/>
+                            <aside class="notes">
+                              <p>Don't you think it could be improved a bit ? I asked</p>
+                              <p>Well, we may have some technical debt hear, we can log that if you want.</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/result.jpg"  width="500" height="500"/>
+                            <img src="images/empty-technical-debt.jpg"  width="400" height="500"/>
+                            <aside class="notes">
+                              <p>Oh ! I see ! Let's ask a friend !</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/ward.jpg"  width="850" height="500"/>
+                            <aside class="notes">
+                              <p>Well, it seems he disagree</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/sad-consultants.jpg"  width="750" height="500"/>
+                            <aside class="notes">
+                              <p>They were a bit sad but came with that a new version</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/result.jpg"  width="500" height="500"/>
+                            <img src="images/simple-technical-debt.jpg"  width="400" height="500"/>
+                            <aside class="notes">
+                              <p>Now we can go to the next step they said</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/all-the-stories.jpg"  width="500" height="500"/>
+                            <aside class="notes">
+                              <p>I wasn't really surprised so I said</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/no.jpg"  width="700" height="500"/>
+                            <aside class="notes">
+                              <p>We need more details on the debts !</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <p>In which case(s) is the current solution a problem ?</p>
+                            <p>How else can we do it ?</p>
+                            <aside class="notes">
+                              <p>Ok ok, we'll do it they said... or not</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/rage-consultants.jpg"  width="700" height="500"/>
+                            <aside class="notes">
+                              <p>That was there real reaction :D</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/result.jpg"  width="500" height="500"/>
+                            <img src="images/full-technical-debt.jpg"  width="400" height="500"/>
+                            <aside class="notes">
+                              <p>Now we can go to the next step they said</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/all-the-stories.jpg"  width="500" height="500"/>
+                            <aside class="notes">
+                              <p>Guess my reaction</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <img src="images/facepalm.jpg"  width="500" height="500"/>
+                            <aside class="notes">
+                              <p>And then I draw them this</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <p>Who is impact ?</p>
+                            <table>
+                              <tr><td rowspan="2">Technical Debt</td><td>Users</td></tr>
+                              <tr><td>Ops</td></tr>
+                              <tr><td>Crappy code</td><td>Devs</td></tr>
+                            </table>
+                            <aside class="notes">
+                              <p>If the only party impact by a technical task is the dev, then it's not a technical debt, it's just crappy code.</p>
+                              <p>The reimbusment should be paid within a feature.</p>
+                            </aside>
+                          </section>
+                          <section>
+                            <h1>Questions ?</h1>
+                          </section>
 			</div>
 		</div>
 
@@ -39,10 +165,12 @@
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: 'socket.io/socket.io.js', async: true },
+                        { src: 'plugin/notes-server/client.js', async: true }
 				]
 			});
 		</script>
